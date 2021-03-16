@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Redirecting to home</title>
-<meta http-equiv="refresh" content="0; URL=https://muensterer.xyz/">
-<link rel="canonical" href="https://muensterer.xyz/">
+<title>Redirecting</title>
+<meta http-equiv="refresh" content="0; URL=https://muensterer.link/">
+<script>
+  var redirect = location.href
+  console.log(redirect)
+  window.location = redirect.replace('https', 'http')
+</script>
