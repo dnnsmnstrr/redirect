@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting</title>
+<meta http-equiv="refresh" content="0; URL=https://muensterer.link/">
 <script>
   var redirect = location.href
-  console.log(redirect)
-  console.log(window.location.pathname)
-  window.location.assign('https://dnnsmnstrr.vercel.app/api/redirect' + window.location.pathname + '?noReturn=true')
+  window.location = redirect.replace('https', 'http') + '?noReturn=true'
 </script>
