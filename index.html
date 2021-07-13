@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting</title>
-<meta http-equiv="refresh" content="0; URL=https://muensterer.link/">
 <script>
-  var redirect = location.href
-  if (!redirect.includes('noReturn')) {
-    window.location = redirect.replace('https', 'http') + '?noReturn=true'
+  var redirect = location.pathname
+  if (!location.search.includes('noReturn')) {
+    window.location.replace('https://dnnsmnstrr.vercel.app/api/redirect' + redirect + '?noReturn=true')
   } else {
-    window.location.assign('https://dnnsmnstrr.github.io')
+    window.location.replace('https://dnnsmnstrr.github.io')
   }
+  document.getElementsByTagName('head')[0].appendChild(meta);
 </script>
