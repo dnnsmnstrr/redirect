@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting</title>
+<script>
+  var redirect = location.pathname
+  if (!location.search.includes('noReturn')) {
+    window.location.replace('https://dnnsmnstrr.vercel.app/api/redirect' + redirect + '?noReturn=true')
+  } else {
+    window.location.replace('https://dnnsmnstrr.github.io')
+  }
+</script>
